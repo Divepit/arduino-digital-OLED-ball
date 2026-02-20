@@ -52,6 +52,7 @@ Useful constants:
 
 - `SCREEN_WIDTH`, `SCREEN_HEIGHT`, `BALL_RADIUS` in `src/main.cpp`
 - `PIXELS_PER_METER_X`, `PIXELS_PER_METER_Y`, `IMU_ADDR` in `include/simulation.h`
+- `MAX_PARTICLES` in `include/simulation.h` (currently `1`)
 
 ## AI Declaration
 
