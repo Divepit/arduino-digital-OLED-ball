@@ -75,7 +75,7 @@ Useful constants:
 
 ## AI Declaration
 
-This is an educational project for myself, so I wrote all of it manually and used AI for code review / sparring to learn about inefficiencies and where I can improve.
+This is an educational project for myself, so I wrote all of it manually and used AI for code review / sparring to learn about inefficiencies and where I can improve. The readme was mostly generated using OpenAI Codex.
 
 ## License
 
