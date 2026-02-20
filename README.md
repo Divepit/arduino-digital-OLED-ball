@@ -24,7 +24,7 @@ This project reads acceleration from an I2C IMU (address `0x68`) and simulates a
 
 - `A4` -> `SDA` (OLED + IMU)
 - `A5` -> `SCL` (OLED + IMU)
-- `5V` -> `VCC` (OLED + IMU, if your modules support 5V)
+- `3.3V` -> `VCC` (OLED + IMU)
 - `GND` -> `GND` (OLED + IMU)
 
 Both devices share the same I2C bus.
@@ -46,32 +46,12 @@ pio run
 pio run -t upload
 ```
 
-Optional serial monitor:
-
-```bash
-pio device monitor
-```
-
-## Project Structure
-
-- `src/main.cpp`: setup, rendering loop, simulation step
-- `src/simulation.cpp`: IMU readout, gravity mapping, bounds constraints
-- `src/particle.cpp`: particle state integration
-- `include/*.h`: math (`Vector3`), particle, simulation interfaces
-- `platformio.ini`: board/framework/libs configuration
-
 ## Configuration
 
 Useful constants:
 
 - `SCREEN_WIDTH`, `SCREEN_HEIGHT`, `BALL_RADIUS` in `src/main.cpp`
 - `PIXELS_PER_METER_X`, `PIXELS_PER_METER_Y`, `IMU_ADDR` in `include/simulation.h`
-- `MAX_PARTICLES` in `include/simulation.h` (currently `1`)
-
-## Current Notes
-
-- IMU sampling uses raw accelerometer registers starting at `0x3B`.
-- If your MPU6050 starts in sleep mode, add IMU initialization in `setup()` (write `0x00` to power management register `0x6B`).
 
 ## AI Declaration
 

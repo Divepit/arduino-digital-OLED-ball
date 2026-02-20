@@ -6,7 +6,6 @@
 static constexpr int PIXELS_PER_METER_X = 5565;
 static constexpr int PIXELS_PER_METER_Y = 5333;
 static constexpr uint8_t IMU_ADDR = 0x68;
-static constexpr int MAX_PARTICLES = 1;
 
 class Simulation
 {
