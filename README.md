@@ -1,4 +1,4 @@
-# Arduino OLED/IMU digital ball simulation
+# Arduino UNO OLED/IMU digital ball simulation
 
 Arduino + OLED + IMU simulation that renders a single ball moving with gravity based on live accelerometer data.
 
